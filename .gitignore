@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Veri: ham veri indirme betiğiyle yeniden üretilir
+data/raw/*.csv
+data/processed/*
+!data/processed/.gitkeep
+
+# Hocanın slaytı ve öğrenci numaralı form: repo herkese açık olursa paylaşılmasın
+docs/ders_slayti.pdf
+docs/proje_oneri_formu.docx
+
+# Editör / sistem
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
