@@ -114,7 +114,7 @@ Notebook'lardaki her adım dört parçadan oluşuyor:
 | Notebook | Hafta | İçerik | Durum |
 |---|---|---|---|
 | — | H1–H2 | Literatür, problem tanımı, öneri formu | ✅ |
-| [`01_eda`](notebooks/01_eda.ipynb) | H3–H4 | Veri kalitesi, dağılımlar, dengesizlik, aylar, PageValues | 🔄 Adım 0–3 tamam |
+| [`01_eda`](notebooks/01_eda.ipynb) | H3–H4 | Veri kalitesi, dağılımlar, dengesizlik, aylar, PageValues | 🔄 Adım 0–4 tamam |
 | [`02_baseline`](notebooks/02_baseline.ipynb) | H5–H6 | Bölmeler, Pipeline, iki baseline, lojistik regresyon | ⬜ |
 | [`03_modeller`](notebooks/03_modeller.ipynb) | H7–H8 | Karar ağacı, Random Forest, 3 modelin karşılaştırılması | ⬜ |
 | [`04_deneyler`](notebooks/04_deneyler.ipynb) | H9–H10 | Hiperparametre, eşik, PageValues ve zaman bölmesi deneyleri | ⬜ |

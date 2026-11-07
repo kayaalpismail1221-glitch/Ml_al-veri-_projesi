@@ -7,9 +7,9 @@ Hoca kilometre taşlarını dönem boyunca kontrol ediyor (slayt 65–66). Her h
 - [ ] 30 saniyelik proje tanıtımı (hedef, görev tipi, veri kaynağı, metrik, bir risk)
 
 ## H3–H4 (02.11 – 15.11): Temizlik ve EDA → `01_eda.ipynb`
-- [ ] Veri indirildi ve doğrulandı (`scripts/download_data.py`)
-- [ ] Veri kalitesi: eksik değer, tekrar eden satır, tutarsız yazımlar
-- [ ] Hedef dağılımı ve dengesizlik
+- [x] Veri indirildi ve doğrulandı (`scripts/download_data.py`)
+- [x] Veri kalitesi: eksik değer, tekrar eden satır, tutarsız yazımlar
+- [x] Hedef dağılımı ve dengesizlik
 - [ ] Sayısal değişkenlerin dağılımı, çarpıklık, aykırı değerler
 - [ ] Kategorik değişkenler: sayıyla kodlanmış olanlar, kategori sayıları
 - [ ] Aylara göre oturum sayısı ve alışveriş oranı
