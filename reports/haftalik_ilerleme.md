@@ -12,7 +12,7 @@ Hoca kilometre taşlarını dönem boyunca kontrol ediyor (slayt 65–66). Her h
 - [x] Hedef dağılımı ve dengesizlik
 - [x] Sayısal değişkenlerin dağılımı, çarpıklık, aykırı değerler
 - [x] Kategorik değişkenler: sayıyla kodlanmış olanlar, kategori sayıları
-- [ ] Aylara göre oturum sayısı ve alışveriş oranı
+- [x] Aylara göre oturum sayısı ve alışveriş oranı
 - [ ] PageValues ile alışveriş ilişkisi
 - [ ] `data/README.md` "Sınırlamalar" bölümü güncellendi
 - **Kim ne yaptı:**
