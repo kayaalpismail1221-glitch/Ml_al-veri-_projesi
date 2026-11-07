@@ -20,3 +20,6 @@ docs/proje_oneri_formu.docx
 .DS_Store
 Thumbs.db
 
+
+# Jupyter boş defterler
+Untitled*.ipynb
