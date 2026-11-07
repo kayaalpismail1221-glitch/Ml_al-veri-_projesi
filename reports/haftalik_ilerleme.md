@@ -14,7 +14,7 @@ Hoca kilometre taşlarını dönem boyunca kontrol ediyor (slayt 65–66). Her h
 - [x] Kategorik değişkenler: sayıyla kodlanmış olanlar, kategori sayıları
 - [x] Aylara göre oturum sayısı ve alışveriş oranı
 - [x] PageValues ile alışveriş ilişkisi
-- [ ] `data/README.md` "Sınırlamalar" bölümü güncellendi
+- [x] `data/README.md` "Sınırlamalar" bölümü güncellendi
 - **Kim ne yaptı:**
 
 ## H5–H6 (16.11 – 29.11): Baseline ve ilk metrik → `02_baseline.ipynb`

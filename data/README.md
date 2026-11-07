@@ -34,8 +34,17 @@
 ## Bilinen sınırlamalar ve dikkat noktaları
 - **PageValues:** Google Analytics'te bir sayfanın değeri, o sayfanın **alışveriş yapılan** oturumlarda ziyaret edilmesinden hesaplanır. Oturumun kendi alışverişi bu değere katkı vermiş olabilir. Bu yüzden projede PageValues'lu ve PageValues'suz modeller karşılaştırılıyor.
 - **Oturum sonu toplamları:** Sayfa sayıları ve süreler oturum bittikten sonra hesaplanmış toplamlar. Oturum devam ederken bu değerler henüz tam değil; gerçek zamanlı kullanım için bu bir kısıt.
-- **EDA'da kontrol edilecekler:** Tekrar eden satır var mı? Hangi aylar veride var, hangileri yok? Ay adlarının yazımı tutarlı mı? Süre değişkenleri ne kadar çarpık? `SpecialDay` hangi aylarda sıfırdan farklı? Alışveriş oranı aylara göre nasıl değişiyor?
-- (EDA sonrası buraya kendi bulgularınızı ekleyin.)
+
+### EDA bulguları (`notebooks/01_eda.ipynb`)
+- **Tekrar eden satırlar:** 125 birebir tekrar var. Hepsi alışverişsiz ve tek ürün sayfasında 0 saniye kalınmış oturumlar. Bölmeden önce silindi; temiz veri **12.205 satır**, alışveriş oranı %15,6.
+- **Eksik ve mantıksız değer:** Yok. `BounceRates` ve `ExitRates` en fazla 0,2.
+- **Aylar:** Ocak ve Nisan veride yok; Haziran `June` diye yazılmış (diğer aylar üç harfli). Yıl bilgisi yok, ayların aynı takvim yılına ait olduğu varsayılıyor.
+- **Aylara göre değişim:** Alışveriş oranı Şubat'ta %1,6, Kasım'da %25,4. Oturumların yarıdan fazlası Mayıs ve Kasım'da. Zaman bölmesinde eğitim (Şub–Ağu) %11,1, doğrulama (Eyl–Eki) %20,2, test (Kas–Ara) %20,7 alıcı içeriyor: **dağılım kayması** var.
+- **Çarpıklık ve aykırı değerler:** Tüm sayısal değişkenler sağa çarpık (skew 2–7,6). En uzun oturum 17,8 saat; aykırı değerler gerçek davranış sayılıp tutuldu.
+- **Sayıyla kodlanmış kategorikler:** `OperatingSystems`, `Browser`, `Region`, `TrafficType` kodlarının sırası anlamsız; one-hot ile 65 sütun oluşuyor. Bazı kategoriler çok seyrek (ör. `TrafficType` 12 ve 17'de birer oturum).
+- **`SpecialDay`:** Sadece Şubat ve Mayıs'ta sıfırdan farklı.
+- **PageValues:** Oturumların %77,9'unda 0. Revenue ile korelasyonu 0,49, diğer tüm değişkenlerden çok daha güçlü; alıcıların %19,4'ünde ise 0. Sızıntı şüphesi sürüyor.
+- **Birbirine çok benzeyen değişkenler:** BounceRates–ExitRates (0,91), ProductRelated–ProductRelated_Duration (0,86).
 
 ## Uygun kullanım
 - **Uygun:** Ders projesi; sınıflandırma, dengesiz veri, sızıntı ve zaman bölmesi denemeleri.
