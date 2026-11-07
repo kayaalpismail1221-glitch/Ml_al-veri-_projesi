@@ -10,7 +10,7 @@ Hoca kilometre taşlarını dönem boyunca kontrol ediyor (slayt 65–66). Her h
 - [x] Veri indirildi ve doğrulandı (`scripts/download_data.py`)
 - [x] Veri kalitesi: eksik değer, tekrar eden satır, tutarsız yazımlar
 - [x] Hedef dağılımı ve dengesizlik
-- [ ] Sayısal değişkenlerin dağılımı, çarpıklık, aykırı değerler
+- [x] Sayısal değişkenlerin dağılımı, çarpıklık, aykırı değerler
 - [ ] Kategorik değişkenler: sayıyla kodlanmış olanlar, kategori sayıları
 - [ ] Aylara göre oturum sayısı ve alışveriş oranı
 - [ ] PageValues ile alışveriş ilişkisi
